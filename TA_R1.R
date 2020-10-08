@@ -56,3 +56,15 @@ df1 <- data.frame(mean_log,sd_log)
 rownames(df1) <- c("AMZN","FB","TSLA","AAPL","IBM")
 colnames(df1) <- c("Mean_Log_return","Sd_Log_return")
 df1
+
+
+
+chartSeries(AMZN$AMZN.Close, TA = c(addBBands(),addBBands(draw = "p"),addMACD(),addVo()), subset = "2018")
+
+chartSeries(FB$FB.Close, TA = c(addBBands(),addBBands(draw = "p"),addMACD(),addVo()), subset = "2018")
+
+chartSeries(TSLA$TSLA.Close, TA = c(addBBands(),addBBands(draw = "p"),addMACD(),addVo()), subset = "2018")
+
+chartSeries(AAPL$AAPL.Close, TA = c(addBBands(),addBBands(draw = "p"),addMACD(),addVo()), subset = "2018")
+
+chartSeries(IBM$IBM.Close, TA = c(addBBands(),addBBands(draw = "p"),addMACD(),addVo()), subset = "2018")
